@@ -12,5 +12,10 @@ public class UserController {
     public String findUsers() {
         return "All User";
     }
+
+    @GetMapping("/err")
+    public String throwError() throws Exception{
+        throw new Exception("Error");
+    }
     
 }
